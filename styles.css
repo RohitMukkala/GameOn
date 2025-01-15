@@ -70,11 +70,12 @@ main {
   margin: 10px 0;
 }
 
-.animated-media video,
-.animated-media img {
+.media {
   width: 100%;
-  height: auto;
-  border-radius: 5px;
+  height: 180px; /* Fixed height for all media */
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ff0000; /* Neon red border for consistency */
 }
 
 /* Play Button */
