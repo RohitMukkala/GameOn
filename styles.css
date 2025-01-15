@@ -6,6 +6,13 @@ body {
   background-color: #000; /* Black background for neon theme */
   color: #fff;
   text-align: center;
+  display: flex; /* Flexbox for vertical and horizontal alignment */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  flex-direction: column; /* Align content vertically */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  box-sizing: border-box; /* Include padding and border in width/height */
 }
 
 /* Header */
@@ -13,6 +20,8 @@ header {
   background-color: #ff0000; /* Neon red */
   color: black;
   padding: 20px;
+  width: 100%; /* Stretch header across the full width */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 header h1 {
@@ -27,7 +36,10 @@ header p {
 
 /* Main Content */
 main {
+  width: 100%; /* Full width for main content */
   padding: 20px;
+  box-sizing: border-box; /* Include padding in width calculation */
+  overflow: hidden; /* Prevent any horizontal overflow */
 }
 
 .games h2 {
@@ -38,9 +50,9 @@ main {
 
 .game-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  flex-wrap: wrap; /* Wrap items to prevent overflow */
+  justify-content: center; /* Center the game cards */
+  gap: 20px; /* Add spacing between cards */
 }
 
 /* Game Cards */
@@ -48,7 +60,7 @@ main {
   background-color: #111; /* Dark background for contrast */
   border: 1px solid #ff0000; /* Neon red border */
   border-radius: 10px;
-  width: 300px;
+  width: 300px; /* Fixed width for consistency */
   padding: 20px;
   box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5); /* Neon red glow */
   transition: transform 0.3s, box-shadow 0.3s;
@@ -71,9 +83,9 @@ main {
 }
 
 .media {
-  width: 100%;
+  width: 100%; /* Full width of the card */
   height: 180px; /* Fixed height for all media */
-  object-fit: cover;
+  object-fit: cover; /* Maintain aspect ratio while filling the space */
   border-radius: 10px;
   border: 1px solid #ff0000; /* Neon red border for consistency */
 }
