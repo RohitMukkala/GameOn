@@ -11,49 +11,56 @@
     <header>
       <h1>Welcome to GameOn</h1>
       <p>Your hub for fun and classic games!</p>
+      <!-- Login Icon -->
+      <div class="login-icon" id="loginIcon" title="Login/Register">
+        <img src="./assets/login-icon.png" alt="Login Icon" />
+      </div>
     </header>
     <main>
-      <!-- User Authentication Section -->
-      <section class="auth-forms">
-        <h2>User Authentication</h2>
-        <div class="forms">
-          <!-- Registration Form -->
-          <form id="registerForm">
-            <h3>Register</h3>
-            <input
-              type="text"
-              name="username"
-              placeholder="Username"
-              required
-            />
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              required
-            />
-            <button type="submit">Register</button>
-          </form>
+      <!-- Modal for Login/Registration -->
+      <div id="authModal" class="modal">
+        <div class="modal-content">
+          <span id="closeModal" class="close">&times;</span>
+          <h2>User Authentication</h2>
+          <div class="forms">
+            <!-- Registration Form -->
+            <form id="registerForm">
+              <h3>Register</h3>
+              <input
+                type="text"
+                name="username"
+                placeholder="Username"
+                required
+              />
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+              <button type="submit">Register</button>
+            </form>
 
-          <!-- Login Form -->
-          <form id="loginForm">
-            <h3>Login</h3>
-            <input
-              type="text"
-              name="username"
-              placeholder="Username"
-              required
-            />
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              required
-            />
-            <button type="submit">Login</button>
-          </form>
+            <!-- Login Form -->
+            <form id="loginForm">
+              <h3>Login</h3>
+              <input
+                type="text"
+                name="username"
+                placeholder="Username"
+                required
+              />
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+              <button type="submit">Login</button>
+            </form>
+          </div>
         </div>
-      </section>
+      </div>
 
       <!-- Games Section -->
       <section class="games">

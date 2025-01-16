@@ -54,3 +54,23 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
     alert("Login failed. Please try again later.");
   }
 });
+
+// Modal Handling
+const loginIcon = document.getElementById("loginIcon");
+const authModal = document.getElementById("authModal");
+const closeModal = document.getElementById("closeModal");
+
+loginIcon.addEventListener("click", () => {
+  authModal.style.display = "flex"; // Show modal
+});
+
+closeModal.addEventListener("click", () => {
+  authModal.style.display = "none"; // Hide modal
+});
+
+// Close modal when clicking outside of it
+window.addEventListener("click", (e) => {
+  if (e.target === authModal) {
+    authModal.style.display = "none";
+  }
+});
