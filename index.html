@@ -3,28 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GameOn</title>
+    <title>GameON</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <header>
-      <h1>Welcome to GameOn</h1>
+      <h1>Welcome to GameON</h1>
       <p>Your hub for fun and classic games!</p>
-      <!-- Login Icon -->
-      <div class="login-icon" id="loginIcon" title="Login/Register">
-        <img src="./assets/login-icon.png" alt="Login Icon" />
+      <!-- Add User Icon -->
+      <div id="addUserIcon" class="icon" title="Add User">
+        <i class="ri-user-add-line"></i>
+        <span>Add User</span>
       </div>
     </header>
     <main>
       <!-- Modal for Login/Registration -->
-      <div id="authModal" class="modal">
+      <div id="authModal" class="modal hidden">
         <div class="modal-content">
           <span id="closeModal" class="close">&times;</span>
-          <h2>User Authentication</h2>
+          <h2><i class="ri-user-add-line"></i> User Authentication</h2>
+          <!-- Icons in a Column -->
+          <div class="icon-column">
+            <div class="icon" id="registerTab" title="Register">
+              <i class="ri-user-add-line"></i>
+              <span>Register</span>
+            </div>
+            <div class="icon" id="loginTab" title="Login">
+              <i class="ri-login-circle-line"></i>
+              <span>Login</span>
+            </div>
+          </div>
           <div class="forms">
             <!-- Registration Form -->
-            <form id="registerForm">
+            <form id="registerForm" class="form hidden">
               <h3>Register</h3>
               <input
                 type="text"
@@ -42,7 +57,7 @@
             </form>
 
             <!-- Login Form -->
-            <form id="loginForm">
+            <form id="loginForm" class="form hidden">
               <h3>Login</h3>
               <input
                 type="text"
@@ -61,7 +76,6 @@
           </div>
         </div>
       </div>
-
       <!-- Games Section -->
       <section class="games">
         <h2>Select a Game to Play</h2>
@@ -137,9 +151,11 @@
         </div>
       </section>
     </main>
-    <footer>
-      <p>&copy; 2025 GameOn | All Rights Reserved</p>
-    </footer>
+    <style>
+      /* Add User Icon Styling */
+
+      /* Modal */
+    </style>
     <script src="script.js"></script>
   </body>
 </html>

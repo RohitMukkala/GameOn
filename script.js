@@ -55,22 +55,34 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
   }
 });
 
-// Modal Handling
-const loginIcon = document.getElementById("loginIcon");
+// JavaScript to handle modal and forms
+const addUserIcon = document.getElementById("addUserIcon");
 const authModal = document.getElementById("authModal");
 const closeModal = document.getElementById("closeModal");
+const registerTab = document.getElementById("registerTab");
+const loginTab = document.getElementById("loginTab");
+const registerForm = document.getElementById("registerForm");
+const loginForm = document.getElementById("loginForm");
 
-loginIcon.addEventListener("click", () => {
-  authModal.style.display = "flex"; // Show modal
+// Open Modal
+addUserIcon.addEventListener("click", () => {
+  authModal.classList.remove("hidden");
+  registerForm.classList.add("hidden");
+  loginForm.classList.add("hidden");
 });
 
+// Close Modal
 closeModal.addEventListener("click", () => {
-  authModal.style.display = "none"; // Hide modal
+  authModal.classList.add("hidden");
 });
 
-// Close modal when clicking outside of it
-window.addEventListener("click", (e) => {
-  if (e.target === authModal) {
-    authModal.style.display = "none";
-  }
+// Toggle between Register and Login forms
+registerTab.addEventListener("click", () => {
+  registerForm.classList.remove("hidden");
+  loginForm.classList.add("hidden");
+});
+
+loginTab.addEventListener("click", () => {
+  loginForm.classList.remove("hidden");
+  registerForm.classList.add("hidden");
 });
