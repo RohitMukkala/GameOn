@@ -34,6 +34,7 @@ header p {
   margin: 10px 0 0;
   font-size: 1.2rem;
 }
+
 #addUserIcon {
   position: absolute;
   top: 20px;
@@ -54,10 +55,52 @@ header p {
   color: white;
 }
 
+/* Navbar Styles */
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: #d30b0b; /* Match header background */
+  list-style: none;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #030303;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #088178;
+  transition: 0.3s ease;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  left: 20px;
+  bottom: -4px;
+}
+
 /* Main Content */
 .games {
   margin-top: 60px;
 }
+
 main {
   width: 100%; /* Full width for main content */
   padding: 20px;
@@ -234,9 +277,11 @@ button {
 button:hover {
   background-color: #a71818;
 }
+
 .form h3 {
   color: #c91b1b;
 }
+
 .icon i {
   color: #a71818;
 }

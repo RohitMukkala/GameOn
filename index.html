@@ -12,8 +12,25 @@
   </head>
   <body>
     <header>
-      <h1>Welcome to GameON</h1>
-      <p>Your hub for fun and classic games!</p>
+      <nav>
+        <div>
+          <ul id="navbar">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="education.html">Educational</a></li>
+            <li><a href="stratagy.html">Strategy</a></li>
+            <li><a href="puzzle.html">Puzzle</a></li>
+            <li id="lg-bag">
+              <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            </li>
+            <a href="#" id="close"><i class="far fa-times"></i></a>
+          </ul>
+        </div>
+        <div id="mobile">
+          <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+          <i id="bar" class="fas fa-outdent"></i>
+        </div>
+      </nav>
       <!-- Add User Icon -->
       <div id="addUserIcon" class="icon" title="Add User">
         <i class="ri-user-add-line"></i>
@@ -77,76 +94,46 @@
         </div>
       </div>
       <!-- Games Section -->
-      <section class="games">
-        <h2>Select a Game to Play</h2>
+      <!-- Trending Now Section -->
+      <section class="trending">
+        <div class="center-text">
+          <h1>Welcome to GameON</h1>
+          <p>Your hub for fun and classic games!</p>
+        </div>
+        <h2>Trending Now</h2>
         <div class="game-list">
-          <!-- Game 1: Tic Tac Toe -->
+          <!-- Example game cards for trending -->
           <div class="game-card">
-            <h3>Tic Tac Toe</h3>
-            <div class="animated-media">
-              <img
-                src="./assets/Tic Tac Toe.gif"
-                alt="Tic Tac Toe Game Preview"
-                class="media"
-              />
-            </div>
-            <a
-              href="https://rohitmukkala.github.io/TICTACTOE/"
-              class="play-button"
-              target="_blank"
-              >Play Now</a
-            >
+            <h3>Game 1</h3>
+            <a href="#" class="play-button">Play Now</a>
           </div>
-
-          <!-- Game 2: Guess My Number -->
           <div class="game-card">
-            <h3>Guess My Number</h3>
-            <div class="animated-media">
-              <video autoplay loop muted class="media">
-                <source src="./assets/GuessMyNumber1.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <a
-              href="https://rohitmukkala.github.io/Guess-My-Number/"
-              class="play-button"
-              target="_blank"
-              >Play Now</a
-            >
+            <h3>Game 2</h3>
+            <a href="#" class="play-button">Play Now</a>
           </div>
-
-          <!-- Game 3: Pig Game -->
           <div class="game-card">
-            <h3>Pig Game</h3>
-            <div class="animated-media">
-              <video autoplay loop muted class="media">
-                <source src="./assets/piggame.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <a
-              href="https://rohitmukkala.github.io/PIG-GAME/"
-              class="play-button"
-              target="_blank"
-              >Play Now</a
-            >
+            <h3>Game 3</h3>
+            <a href="#" class="play-button">Play Now</a>
           </div>
+        </div>
+      </section>
 
-          <!-- Game 4: Connect 4 -->
+      <!-- Recently Played Section -->
+      <section class="recently-played">
+        <h2>Recently Played</h2>
+        <div class="game-list">
+          <!-- Example game cards for recently played -->
           <div class="game-card">
-            <h3>Connect 4</h3>
-            <div class="animated-media">
-              <video autoplay loop muted class="media">
-                <source src="./assets/connect.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <a
-              href="https://rohitmukkala.github.io/Connect-4/"
-              class="play-button"
-              target="_blank"
-              >Play Now</a
-            >
+            <h3>Game 1</h3>
+            <a href="#" class="play-button">Play Now</a>
+          </div>
+          <div class="game-card">
+            <h3>Game 2</h3>
+            <a href="#" class="play-button">Play Now</a>
+          </div>
+          <div class="game-card">
+            <h3>Game 3</h3>
+            <a href="#" class="play-button">Play Now</a>
           </div>
         </div>
       </section>

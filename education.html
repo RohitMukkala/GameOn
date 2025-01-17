@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games - GameON</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <ul id="navbar">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="education.html">Educational</a></li>
+            <li><a href="stratagy.html">Strategy</a></li>
+            <li><a href="puzzle.html">Puzzle</a></li>
+            <li id="lg-bag">
+              <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            </li>
+            <a href="#" id="close"><i class="far fa-times"></i></a>
+          </ul>
+        </div>
+        <div id="mobile">
+          <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+          <i id="bar" class="fas fa-outdent"></i>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="games">
+        <h2>Select a Game to Play</h2>
+        <div class="game-list">
+          <div class="game-card">
+            <h3>Guess The Number</h3>
+            <div class="animated-media">
+              <img
+                src="./assets/Tic Tac Toe.gif"
+                alt="Tic Tac Toe Game Preview"
+                class="media"
+              />
+            </div>
+            <a href="Education/guess2/guess.html" class="play-button"
+              >Play Now</a
+            >
+          </div>
+
+          <div class="game-card">
+            <h3>Geo Quiz</h3>
+            <div class="animated-media">
+              <video autoplay loop muted class="media">
+                <source src="./assets/GuessMyNumber1.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <a
+              href="Education/quiz/quiz.html"
+              class="play-button"
+              target="_blank"
+              >Play Now</a
+            >
+          </div>
+
+          <div class="game-card">
+            <h3>Speed Type</h3>
+            <div class="animated-media">
+              <video autoplay loop muted class="media">
+                <source src="./assets/piggame.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <a
+              href="Education/speed/speed.html"
+              class="play-button"
+              target="_blank"
+              >Play Now</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
